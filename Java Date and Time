@@ -1,0 +1,12 @@
+import java.util.Date;
+import java.text.SimpleDateFormat;
+public class Main
+{
+public static void main(String args[]){
+    System.out.println("Enter the input value");
+    Date d=new Date();
+    SimpleDateFormat sdf1=new SimpleDateFormat("E MMMM dd hh:mm:ss zzz yyyy");
+    String str=sdf1.format(d);
+    System.out.println("The input date is "+str);
+}
+}
