@@ -1,0 +1,26 @@
+Write a java program to get a Date as String in the format “dd-MM-yyyy” and to print the Date in the specified format.
+Sample Input and Output:
+Enter the input value
+31-01-1999
+The input date is Sun Jan 31 00:00:00 IST 1999
+
+
+import java.util.*;
+import java.text.*;
+public class Main
+{
+public static void main(String args[]){
+    System.out.println("Enter the input value");
+    String pattern="dd-MM-yyyy";
+    SimpleDateFormat format=new SimpleDateFormat(pattern);
+    try{
+        Scanner sc=new Scanner(System.in);
+        String sd=sc.nextLine();
+        Date date=format.parse(sd);
+        System.out.println("The input date is "+date);
+    }
+    catch(ParseException e){
+        e.printStackTrace();
+    }
+}
+}
