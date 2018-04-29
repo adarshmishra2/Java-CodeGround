@@ -1,0 +1,27 @@
+Write a java program to get a Date as String in the format “dd/MM/yyyy” and to print the Date in the specified format shown in sample output and to illustrate the use of getTime() method in the Date Class.
+
+Sample Input and Output:
+Enter the input value
+27/01/1978
+The input date is Fri Jan 27 00:00:00 IST 1978
+Milli-Seconds that have passed since January 1, 1970 is 254687400000
+
+import java.util.*;
+import java.text.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the input value");
+        String form="dd/MM/yyyy";
+        SimpleDateFormat sdf=new SimpleDateFormat(form);
+        try{
+            String taken=sc.nextLine();
+            Date d=sdf.parse(taken);
+            System.out.println("The input date is "+d);
+            System.out.println("Milli-Seconds that have passed since January 1, 1970 is "+d.getTime());
+        }
+        catch(Exception e){
+            System.out.println("ohho! error "+e);
+        }
+    }
+}
