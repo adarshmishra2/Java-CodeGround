@@ -1,0 +1,19 @@
+ Write a program to check if a given number is Positive, Negative, or Zero.
+ 
+ import java.util.*;
+class Check{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+if(a>0){
+System.out.println("Given number is positive");
+}
+else if(a<0){
+System.out.println("Given number is negative");
+}
+else
+{
+System.out.println("Given number is zero");
+}
+}
+}
