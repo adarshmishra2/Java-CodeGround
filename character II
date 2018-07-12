@@ -1,0 +1,22 @@
+Intialize a character variable in a program and 
+if the value is alphabet then print "Alphabet" 
+if it’s a number then print "Digit" and 
+for other characters print "Special Character"
+
+
+import java.util.*;
+class Alphadigit
+{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+char var=sc.nextLine().charAt(0);
+if(var>='a' && var <= 'z'){
+System.out.println("it is an alphabet => "+var);
+}
+else if(Character.isDigit(var)){
+System.out.println("it is a digit => "+var);
+}
+else{
+System.out.println("it is a special character");}
+}
+}
