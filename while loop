@@ -1,0 +1,24 @@
+Write a program to reverse a given number and print
+Eg1)
+I/P: 1234
+O/P:4321
+Eg2)
+I/P:1004
+O/P:4001
+
+
+import java.util.*;
+class Reversenum{
+public static void main(String args[]){
+System.out.println("enter a number to reverse");
+int i,rev=0;
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+while(n!=0){
+rev=rev*10;
+rev=rev+n%10;
+n=n/10;
+}
+System.out.println("Reversed number is "+rev);
+}
+}
