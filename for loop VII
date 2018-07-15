@@ -1,0 +1,35 @@
+ Write a program to print * in Floyds format (using for and while loop)
+*
+*  *
+*  *   *
+Example1:
+     C:\>java Sample 
+
+     O/P Expected : Please enter an integer number
+Example1:
+     C:\>java Sample 3
+
+     O/P Expected :
+                   *
+                   *  * 
+                   *  *  *
+                   
+class Floyd{
+public static void main(String args[]){
+try{
+int input=Integer.valueOf(args[0]);
+int i=1;
+while(i<=input)
+{
+for(int j=1;j<=i;j++){
+System.out.print("*");
+}
+System.out.println();
+i++;
+}
+}
+catch(Exception e){
+System.out.println("Please enter an integer number");
+}
+}
+}
