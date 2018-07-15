@@ -1,0 +1,31 @@
+ Write a program to convert from upper case to lower case and vice versa of an alphabet and 
+ print the old character and new character as shown in example (Ex: a->A, M->m).
+ 
+ import java.util.*;
+
+public class Charactercase{
+
+ 
+public static void main(String []args){
+
+Scanner sc=new Scanner(System.in);
+
+System.out.println("enter the character");
+char one=sc.next().charAt(0);
+     
+if(Character.isUpperCase(one))
+{
+     
+System.out.println("input character is "+one+" and in lower case, it is "+Character.toLowerCase(one));
+}
+    
+else
+    
+{
+       
+System.out.println("input character is "+one+" and in upper case, it is "+Character.toUpperCase(one));
+  
+}
+  
+}
+}
