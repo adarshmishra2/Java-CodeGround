@@ -1,0 +1,32 @@
+Write a Java program to find if the given number is palindrome or not
+
+Example1:
+
+     C:\>java Sample 110011
+
+     O/P Expected : 110011 is a palindrome
+
+Example2:
+
+     C:\>java Sample 1234
+
+     O/P Expected : 1234 is not a palindrome
+     
+     
+class Palindrome{
+public static void main(String args[]){
+int num=Integer.valueOf(args[0]);
+int revint=0,rem,oriint;
+oriint=num;
+while(num!=0)
+{
+rem=num%10;
+revint=revint*10+rem;
+num=num/10;
+}
+if(oriint==revint)
+System.out.println(oriint+" is a palindrome");
+else
+System.out.println(oriint+" is not palindrome");
+}
+}
