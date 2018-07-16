@@ -1,0 +1,21 @@
+ Write a program to initialize an integer array and find the maximum and minimum value of an array
+ 
+ 
+class Arr2{
+public static void main(String args[]){
+int arr[]=new int[] {23,21,64,67};
+int maxvalue=arr[0];
+int minvalue=arr[0];
+for(int i=0;i<arr.length;i++){
+if(arr[i]>maxvalue){
+maxvalue=arr[i];
+}
+}
+System.out.println("max value in array is: "+maxvalue);
+for(int i=0;i<arr.length;i++){
+if(arr[i]<minvalue){
+minvalue=arr[i];
+}}
+System.out.println("min value in array is: "+minvalue);
+}
+}
