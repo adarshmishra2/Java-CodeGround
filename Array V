@@ -1,0 +1,11 @@
+Write a program to find the largest 2 numbers and the smallest 2 numbers in the given array.
+
+import java.util.*;
+class twolargsmal{
+public static void main(String args[]){
+int a[]=new int[]{2,20,34,12,67};
+Arrays.sort(a);
+System.out.println("Two largest numbers are: "+a[a.length-1]+", "+a[a.length-2]);
+System.out.println("Two smallest numbers are: "+a[0]+", "+a[1]);
+}
+}
