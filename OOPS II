@@ -1,0 +1,28 @@
+Create a new class called “Calculator” which contains the following: 
+1. A static method called powerInt(int num1,int num2) that accepts two integers and returns num1 to the power of num2 (num1 power num2). 
+2. A static method called powerDouble(double num1,int num2) that accepts one double and one  integer and returns num1 to the power of num2 (num1 power num2). 
+3. Call your method from another class without instantiating the class (i.e. call it like Calculator.powerInt(12,10) since your methods are defined to be static)
+
+class Calculator{
+public static int powerInt(int num1,int num2){
+int res=1;
+for(int i=0;i<num2;i++){
+res = res*num1;
+}
+return res;
+}
+public static double powerDouble(double num1,int num2){
+double res=1;
+for(int i=0;i<num2;i++){
+res=res*num1;
+}
+return res;
+}
+}
+class Power{
+public static void main(String args[]){
+System.out.println("Value of 2^10: "+Calculator.powerInt(2,10));
+System.out.println("Value of 2.12^10: "+Calculator.powerDouble(2.12,10));
+
+}
+}
