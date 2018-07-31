@@ -1,0 +1,26 @@
+import java.util.*;
+class Arrlis
+{
+public static void main(String args[]){
+
+//size of arraylist
+int n=5;
+
+//declaring arraylist
+ArrayList<Integer> arrli=new ArrayList<Integer>(n);
+
+//adding element
+for(int i=0;i<=n;i++){
+arrli.add(i);
+}
+System.out.println(arrli);
+
+//deletion of element
+arrli.remove(2);
+System.out.println(arrli);
+
+//printing elements one by one
+for(int i=0;i<arrli.size();i++)
+System.out.println(arrli.get(i)+" ");
+}
+}
