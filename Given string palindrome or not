@@ -1,0 +1,16 @@
+class Pal{
+public static void main(String args[]){
+String A="madam";
+String reverse="";
+int length=A.length();
+for(int i=length-1;i>=0;i--){
+reverse=reverse+A.charAt(i);
+}
+if(A.equals(reverse)){
+System.out.println("Yes, it is palindrome.");
+}
+else{
+System.out.println("Nops!");
+}
+}
+}
