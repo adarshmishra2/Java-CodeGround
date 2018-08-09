@@ -1,0 +1,18 @@
+Write a Java program to get the character (Unicode code point) before the specified index within the String.
+
+class GetChar{
+public static void main(String args[]){
+String mystr="Ad2arsh";
+int val1 = mystr.codePointAt(1);
+int val2 = mystr.codePointAt(2);
+
+//codePoint before index 1
+int val3 = mystr.codePointBefore(1);
+int val4 = mystr.codePointBefore(2);
+System.out.println("Character(unicode point): " +val1);
+System.out.println("Character(unicode point): " +val2);
+System.out.println("Character(unicode point): " +val3);
+System.out.println("Character(unicode point): " +val4);
+
+}
+}
