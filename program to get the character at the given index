@@ -1,0 +1,13 @@
+Java program to get the character at the given index within the String
+
+class GetChar{
+public static void main(String args[]){
+String mystr="Adarsh";
+int index4=mystr.charAt(4);
+System.out.println("Char at index 0: "+mystr.charAt(0));
+System.out.println("Char at index 1: "+mystr.charAt(1));
+System.out.println("Char at index 2: "+mystr.charAt(2));
+System.out.println("Char at index 3: "+mystr.charAt(3));
+System.out.println("at index 4 is: "+ (char) index4);
+}
+}
