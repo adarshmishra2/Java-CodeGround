@@ -1,0 +1,9 @@
+class StringConcat{
+public static void main(String args[]){
+
+String str1 = "My name is Adarsh ";
+String str2 = "Mishra";
+
+System.out.println("The concated string is: " + str1.concat(str2));
+}
+}
