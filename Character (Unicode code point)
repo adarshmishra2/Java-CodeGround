@@ -1,0 +1,12 @@
+Write a Java program to get the character (Unicode code point) at the given index within the String.
+
+class GetChar{
+public static void main(String args[]){
+String mystr="Ad2arsh";
+int val1 = mystr.codePointAt(1);
+int val2 = mystr.codePointAt(2);
+System.out.println("Character(unicode point): " +val1);
+System.out.println("Character(unicode point): " +val2);
+
+}
+}
