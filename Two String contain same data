@@ -1,0 +1,13 @@
+Java program to check whether two String objects contain the same data
+
+class Content{
+public static void main(String args[]){
+String col1 = "adarsh";
+String col2 = "ADARSH";
+String col3 = "adarsh";
+
+System.out.println(col1.equals(col2));
+System.out.println(col1.equals(col3));
+System.out.println(col1.equals(col1));
+}
+}
