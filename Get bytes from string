@@ -1,0 +1,13 @@
+program to get the contents of a given string as a byte array.
+
+import java.util.Arrays;
+class Content{
+public static void main(String[] args){
+String str = "This is a string";
+byte[] arr = str.getBytes();
+String str2 = str.replaceAll("\\s","");
+byte[] arr2 = str2.getBytes();
+System.out.println(Arrays.toString(arr2));
+System.out.println(new String(arr));
+}
+}
