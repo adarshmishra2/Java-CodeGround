@@ -1,0 +1,12 @@
+Java program to find whether a region in the current string matches a region in another string
+
+class Regionmatch{
+public static void main(String args[]){
+String str1="Adarsh mishra is a boy";
+String str2="mishra Adarsh is a boy";
+
+boolean match1=str1.regionMatches(0,str2,7,6);
+boolean match2=str1.regionMatches(0,str2,0,6);
+System.out.println(match1+"\n"+match2);
+}
+}
