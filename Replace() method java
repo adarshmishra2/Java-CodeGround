@@ -1,0 +1,13 @@
+class Replace{
+public static void main(String args[]){
+String str="India vs England, england can lose";
+
+String rep=str.replace('e','a');
+String repword=str.replace("lose","win");
+
+System.out.println("Original string: "+str);
+System.out.println("Replace char string: "+rep);
+System.out.println("Replace word string: "+repword);
+
+}
+}
