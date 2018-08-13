@@ -1,7 +1,7 @@
 Java program to sum values of an array
 
 import java.util.Arrays;
-class Array2{
+class Array2 {
 public static void main(String args[]){
 
 int[] arr={1,2,3,4,5,6,7,8,9,10};
@@ -11,6 +11,8 @@ System.out.println("Array elements are: "+Arrays.toString(arr));
 for(int i:arr){
 sum=sum+i;
 }
+double avg=sum/arr.length;
 System.out.println("the sum of array is: "+sum);
-
-}}
+System.out.println("average is: "+avg);
+}
+}
