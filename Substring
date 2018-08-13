@@ -1,0 +1,10 @@
+Java program to get a substring of a given string between two specified positions
+
+class SubsString{
+
+     public static void main(String []args){
+         String str="the quick brown fox jumps over the lazy dog";
+         String substr=str.substring(4,19);
+        System.out.println("String is: "+str+"\nSubstring is: "+substr);
+     }
+}
