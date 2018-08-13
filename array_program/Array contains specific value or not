@@ -1,0 +1,17 @@
+Java program to test if an array contains a specific value.
+
+class Array4{
+public static void main(String args[]){
+int[] my_arr = {17,18,19,20,21,22,23,28};
+System.out.println(contains(my_arr,23));
+System.out.println(contains(my_arr,24));
+}
+public static boolean contains(int[] arr,int find){
+ for(int n:arr){
+    if(find == n){
+	 return true;
+	}
+ }
+ return false;
+}
+}
