@@ -1,0 +1,15 @@
+ Java program to remove a specific element from an array.
+ 
+ import java.util.Arrays;
+class Array6{
+public static void main(String args[]){
+int[] myarr={1,2,3,4,5,6,7,8,9};
+System.out.println("Original Array: "+Arrays.toString(myarr));
+int removeIndex=1;
+
+for(int i=removeIndex;i<myarr.length-1;i++){
+myarr[i]=myarr[i+1];
+}
+System.out.println("After removing: "+Arrays.toString(myarr));
+}
+}
