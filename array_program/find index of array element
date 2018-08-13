@@ -1,0 +1,23 @@
+Java program to find the index of an array element.
+
+class Array5{
+public static void main(String args[]){
+int[] myarr = {12,12,13,14,15,16,17,18};
+System.out.println("Index position of 14 is: "+findIndex(myarr,14));
+System.out.println("Index position of 12 is: "+findIndex(myarr,12));
+ }
+ public static int findIndex(int[] myarr,int t){
+	if(myarr == null)
+	return -1;
+	int i=0;
+	int len=myarr.length;
+	while(i < len)
+	{
+	 if(myarr[i] == t)
+	 return i;
+	 else
+	 i++;
+	}
+	return -1;
+ }
+}
