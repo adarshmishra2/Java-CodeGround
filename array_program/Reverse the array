@@ -1,0 +1,20 @@
+import java.util.Arrays;
+class Array9{
+public static void main(String args[]){
+int[] a=new int[]{12,13,123,54,1234,67};
+System.out.println(Arrays.toString(a));
+reverse(a,0,a.length-1);
+System.out.println(Arrays.toString(a));
+}
+static void reverse(int[] arr, int start, int end){
+	int temp;
+	
+	while(start < end){
+			temp = arr[start];
+			arr[start] = arr[end];
+			arr[end] = temp;
+			start++;
+			end--;
+	}
+}
+}
