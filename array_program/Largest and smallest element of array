@@ -1,0 +1,20 @@
+import java.util.Arrays;
+class Array8{
+public static void main(String args[]){
+int a[] = new int[]{23,14,13,12,545,67,42,89,3,43};
+int min = a[0];
+int max = a[0];
+
+for(int i=1; i<a.length; i++){
+     if(a[i] > max){
+	    max = a[i];
+	 }
+	 if(a[i] < min){
+		min = a[i];
+	 }
+}
+System.out.println("Array elements are: "+Arrays.toString(a));
+System.out.println("max value of array is: "+max);
+System.out.println("min value of array is: "+min);
+}
+}
