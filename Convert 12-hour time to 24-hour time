@@ -1,0 +1,15 @@
+static String timeConversion(String s) {
+	try
+        {
+        SimpleDateFormat input=new SimpleDateFormat("hh:mm:ssaa");
+        SimpleDateFormat output=new SimpleDateFormat("HH:mm:ss");
+        String time24=output.format(input.parse(s));
+        return time24;
+        }
+    catch(ParseException ex)
+        {
+            return ex.toString();
+        }
+        
+
+  }
