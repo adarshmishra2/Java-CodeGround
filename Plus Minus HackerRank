@@ -1,0 +1,42 @@
+Sample Input:
+6
+-4 3 -9 0 4 1
+
+Sample Output:
+0.500000
+0.333333
+0.166667
+
+Explanation:
+There are 3 positive numbers, 2 negative numbers, and 1 zero in the array. 
+The proportions of occurrence are positive:3/6=0.500000 , negative: 2/6=0.333333 and zeros:1/6=0.166667 .
+
+Program:
+ static void plusMinus(int[] arr) {
+    DecimalFormat decimalFormat = new DecimalFormat();
+    decimalFormat.setMinimumFractionDigits(6);
+        int al=arr.length;
+        int c=0,d=0,e=0;
+        for(int k:arr){
+        
+            if(k>0){
+                c++;
+            }
+            if(k<0){
+                d++;
+            }
+            if(k==0){
+                e++;
+            }
+        
+        }
+    float a = ((float)c)/al;
+    System.out.println(decimalFormat.format(a));
+
+    float x = ((float)d)/al;
+    System.out.println(decimalFormat.format(x));
+
+    float y = ((float)e)/al;
+    System.out.println(decimalFormat.format(y));
+
+   }
