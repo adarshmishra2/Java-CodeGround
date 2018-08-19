@@ -1,3 +1,5 @@
+1) Using Iterative Method :
+
 import java.util.*;
 class Array12{
 	public static void main(String args[]){
@@ -21,5 +23,22 @@ class Array12{
 	}
 	
 	System.out.println("Common element : "+(set));
+}
+}
+
+2) Using retainAll() Method :
+
+import java.util.*;
+class Array012{
+	public static void main(String args[]){
+	
+	String[] arr1 = {"python","sql","java","php","perl"};
+	String[] arr2 = {"mysql","oracle","sql","SQL","sqlite"};
+	
+	HashSet<String> set1 = new HashSet<>(Arrays.asList(arr1));
+	HashSet<String> set2 = new HashSet<>(Arrays.asList(arr2));
+	
+	set1.retainAll(set2);
+	System.out.println(set1);
 }
 }
