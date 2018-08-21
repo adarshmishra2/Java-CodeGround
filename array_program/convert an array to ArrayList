@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+class Array14{
+public static void main(String args[]){
+String[] my_array = new String[]{"Python","Java","Php","Perl"};
+System.out.println(Arrays.toString(my_array));
+
+ArrayList<String> list = new ArrayList<String>(Arrays.asList(my_array));
+
+System.out.println(list);
+}
+}
