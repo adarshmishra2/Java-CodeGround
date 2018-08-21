@@ -1,0 +1,38 @@
+import java.util.*;
+class Array13{
+public static void main(String args[]){
+	Scanner in=new Scanner(System.in);
+	int m,n;
+	System.out.println("Enter no of rows of matrix");
+	m=in.nextInt();
+	System.out.println("Enter no of columns of matrix");
+	n=in.nextInt();
+	
+	int ar1[][]=new int[m][n];
+	int ar2[][]=new int[m][n];
+	int sum[][]=new int[m][n];
+	
+	System.out.println("Enter elements of first matrix");
+	for(int i=0;i<m;i++)
+		for(int j=0;j<n;j++)
+			ar1[i][j]=in.nextInt();
+			
+	System.out.println("Enter elements of second matrix");
+	for(int i=0;i<m;i++)
+		for(int j=0;j<n;j++)
+			ar2[i][j]=in.nextInt();
+			
+	for(int i=0;i<m;i++)
+		for(int j=0;j<n;j++)
+			sum[i][j]=ar1[i][j]+ar2[i][j];
+			
+	System.out.println("Sum of matrices: ");
+	
+	for(int i=0;i<m;i++){
+		for(int j=0;j<n;j++)
+			System.out.print(sum[i][j]+"\t");
+			
+			System.out.println();
+			}
+}
+}
