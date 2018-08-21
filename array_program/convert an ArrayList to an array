@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+class Array15{
+public static void main(String args[]){
+
+	ArrayList<String> list = new ArrayList<String>();
+	list.add("python");
+	list.add("java");
+	list.add("go");
+	list.add("c");
+	
+	String[] my_array = new String[list.size()];
+	
+	list.toArray(my_array);
+	
+	for(String str : my_array){
+		System.out.println(str);
+		}
+	
+	}
+}
