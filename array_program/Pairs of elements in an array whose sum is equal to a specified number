@@ -1,0 +1,24 @@
+class Array16
+{
+	public static void main(String args[])
+  {
+		pairs_value(new int[]{2,7,4,-5,11,5,20},15);
+		pairs_value(new int[]{14, -15, 9, 16, 25, 45, 12, 8},30);
+}
+
+	static void pairs_value(int inpArr[], int inpNum)
+	{
+	System.out.println("Pairs of element and their sum: ");
+	
+	for(int i=0;i<inpArr.length;i++)
+	{
+		for(int j=i+1;j<inpArr.length;j++)
+		{
+			if(inpArr[i]+inpArr[j]==inpNum)
+			{
+			System.out.println(inpArr[i]+" + "+inpArr[j]+" = "+inpNum);
+			}
+		}
+	 }
+	}
+}
