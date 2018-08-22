@@ -1,0 +1,13 @@
+class Array18{
+public static void main(String args[]){
+	
+	int total = 7;
+	int[] nums = {1,2,3,5,6,7};
+	int expexted_sum = total*((total+1)/2);
+	int num_sum=0;
+	for(int i: nums){
+		num_sum += i;
+	}
+	System.out.println(expexted_sum-num_sum);
+}
+}
