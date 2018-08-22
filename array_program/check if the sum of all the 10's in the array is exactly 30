@@ -1,0 +1,23 @@
+import java.util.*;
+class Array24{
+public static void main(String args[]) {
+	int[] arr = {50,10,54,10,543,2,10};
+	System.out.println("Array is: "+Arrays.toString(arr));
+	int search_sum = 10;
+	int fixed_sum = 30;
+	System.out.println("Is all the 10's sum is: 30? "+test(arr,search_sum,fixed_sum));
+	}
+	
+	static boolean test(int[] arr,int search_sum,int fixed_sum){
+		int tmp = 0;
+		for(int num : arr){
+			if(num == search_sum){
+				tmp += search_sum;
+			}
+			if(tmp > fixed_sum){
+				break;
+			}
+		}
+		return tmp == fixed_sum;
+	}
+}
