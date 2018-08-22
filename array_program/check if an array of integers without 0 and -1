@@ -1,0 +1,17 @@
+import java.util.*;
+class Array23{
+public static void main(String args[]) {
+	int[] arr = {50,7,54,23,543,2};
+	System.out.println("Array is: "+Arrays.toString(arr));
+	System.out.println("It contains 0 or -1: "+test(arr));
+	}
+	
+	static boolean test(int[] arr){
+		for(int num : arr){
+			if(num == -1 || num == 0){
+			return true;
+		}		
+	}
+	return false;
+	}
+}
