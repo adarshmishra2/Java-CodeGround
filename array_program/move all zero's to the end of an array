@@ -1,0 +1,39 @@
+import java.util.*;
+class Array20{
+public static void main(String args[]){
+	//1
+	int[] arr = {3,0,2,1,0,0,34,6,7,0};
+	
+	//2
+	int currentIndex = 0;
+	
+	//3
+	for(int i = 0; i < arr.length; i++){
+	
+	//4
+		if(arr[i]!=0){
+			arr[currentIndex] = arr[i];
+			currentIndex++;
+		}
+	}
+	
+	//5
+	while(currentIndex < arr.length){
+		arr[currentIndex] = 0;
+		currentIndex++;
+	}
+	
+	//6
+		System.out.print(Arrays.toString(arr));
+	
+ }
+}
+
+
+1. arr is the given array. It contains both zero and non-zero values.
+2. Initialize one integer value currentIndex with value as 0.
+3. Iterate through the array one by one element.
+4. Check if the current element is non zero or not. If non-zero, insert the value to the position currentIndex.
+   Increment the value of currentIndex.
+5. After all items are scanned, insert 0 to all remaining position of the array.
+6. Finally, print out the array to the user.
