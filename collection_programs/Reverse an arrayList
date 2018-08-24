@@ -1,0 +1,15 @@
+import java.util.*;
+class arrayList5{
+public static void main(String[] args){
+	List<String> ls = new ArrayList<String>();
+	ls.add("red");
+	ls.add("yellow");
+	ls.add("blue");
+	ls.add("purple");
+	ls.add("green");
+	ls.add("white");
+	System.out.println(ls);
+	Collections.reverse(ls);
+	System.out.println(ls);
+	}
+}
