@@ -1,0 +1,17 @@
+import java.util.*;
+class arrayList7{
+public static void main(String[] args){
+	List<String> ls = new ArrayList<String>();
+	ls.add("red");
+	ls.add("yellow");
+	ls.add("blue");
+	ls.add("purple");
+	ls.add("green");
+	ls.add("white");
+	System.out.println("Before swap: "+ls);
+	//swap two element
+	Collections.swap(ls,0,2);
+	System.out.println("After swap: "+ls);
+	
+	}
+}
