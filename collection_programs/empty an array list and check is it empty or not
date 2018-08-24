@@ -1,0 +1,21 @@
+import java.util.*;
+class arrayList8{
+public static void main(String[] args){
+	List<String> ls = new ArrayList<String>();
+	ls.add("red");
+	ls.add("yellow");
+	ls.add("blue");
+	ls.add("purple");
+	ls.add("green");
+	ls.add("white");
+	System.out.println(ls);
+	
+	//empty arrayList
+	ls.removeAll(ls);
+	System.out.println("After removing all elements: "+ls);
+	
+	//checking arrayList empty or not
+	System.out.println("Checking array is empty or not: "+ls.isEmpty());
+	
+	}
+}
