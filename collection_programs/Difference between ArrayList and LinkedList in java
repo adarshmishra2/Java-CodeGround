@@ -1,0 +1,20 @@
+==>LinkedList is faster in add and remove, but slower in get. 
+
+==>The time complexity comparison is as follows: 
+      
+          arraylist   linkedlist
+get()       O(1)       O(n)
+add()       O(1)       O(1)
+remove()    O(n)       O(n)
+
+==>ArrayList is faster than LinkedList if I randomly access its elements. Random access means "give me the nth element". 
+   Why ArrayList is faster?
+
+   ArrayList has direct references to every element in the list, so it can get the n-th element in constant time. 
+   LinkedList has to traverse the list from the beginning to get to the n-th element.
+
+
+==>LinkedList is faster than ArrayList for deletion.
+   ArrayList's slower since the internal backing-up array needs to be reallocated.
+
+   ArrayList is slower because it needs to copy part of the array in order to remove the slot that has become free.
