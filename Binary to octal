@@ -1,0 +1,21 @@
+import java.util.*;
+class BinaryToOctal{
+	int num;
+	void getval(){
+		System.out.println("Enter the number: ");
+		Scanner sc = new Scanner(System.in);
+		num = Integer.parseInt(sc.nextLine(),2);
+	}
+	void convert(){
+		String octal = Integer.toOctalString(num);
+		System.out.println("Octal value is: "+octal);
+	}
+	
+}
+class MainClass{
+	public static void main(String args[]){
+		BinaryToOctal obj = new BinaryToOctal();
+		obj.getval();
+		obj.convert();
+	}
+}
