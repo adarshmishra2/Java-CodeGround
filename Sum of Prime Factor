@@ -1,0 +1,23 @@
+import java.util.*;
+class PrimeFactor{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any number to find prime factors");
+		int num = sc.nextInt();
+		int sum = 0;
+		System.out.println("Given number is: "+num);
+		System.out.println("Prime Factors are: ");
+		for(int i=2; i<=num; i++){
+			while(num%i == 0){
+				System.out.print(i+" ");
+				sum=sum+i;
+				num = num/i;
+				
+			}
+		}
+		if(num<1) 
+		System.out.println(num);
+		
+		System.out.println("\nSum of prime factors are: "+sum);
+	}
+}
