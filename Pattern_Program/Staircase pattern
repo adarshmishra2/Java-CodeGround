@@ -20,3 +20,13 @@ static void staircase(int n) {
 
     }
 }
+
+output:
+
+      #
+     ##
+    ###
+   ####
+  #####
+ ######
+#######
